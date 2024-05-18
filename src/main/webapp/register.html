@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registrarse</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="assets/img/apple-icon-removebg-preview.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/apple-icon.ico">
+       
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/slick-theme.css" type="text/css"/>
+
+</head>
+
+<body>
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-sm-center h-100">
+				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+					<div class="text-center my-5">
+                                            <a href="index.html"><img src="assets/img/apple-icon.png" alt="logo" width="100"></a>
+					</div>
+					<div class="card shadow-lg">
+						<div class="card-body p-5">
+							<h1 class="fs-4 card-title fw-bold mb-4">Registro</h1>
+                                                        
+                                                        <form action="ServletPlannetPro" method="post" class="needs-validation">
+								<div class="mb-3">
+									<label class="mb-2 text-muted">Nombre</label>
+									<input name="NombreUsuario" id="name" type="text" class="form-control">
+									<div class="invalid-feedback">
+										Name is required	
+									</div>
+								</div>
+                                                            <div class="mb-3">
+									<label class="mb-2 text-muted">Apellido</label>
+									<input name="ApellidoUsuario" id="name" type="text" class="form-control" >
+									<div class="invalid-feedback">
+											
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<label class="mb-2 text-muted">Direccion de Correo Electronico</label>
+									<input name="CorreoUsuario" id="email" type="email" class="form-control" value="" required>
+									<div class="invalid-feedback">
+										Email is invalid
+									</div>
+								</div>
+                                                            <div class="mb-3">
+									<label class="mb-2 text-muted">Telefono</label>
+									<input name="TelUsuario" id="numberTel" type="text" class="form-control" value="" required>
+									<div class="invalid-feedback">
+										
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<label class="mb-2 text-muted">Contraseña</label>
+									<input name="PassUsuario" id="password" type="password" class="form-control"  required>
+								    <div class="invalid-feedback">
+								    	Password is required
+							    	</div>
+								</div>
+
+								<p class="form-text text-muted mb-3">
+									Al registrarse, usted acepta nuestros términos y condiciones.
+								</p>
+
+								<div class="align-items-center d-flex">
+									<button type="submit" class="btn btn-primary ms-auto">
+										Registro	
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="card-footer py-3 border-0">
+							<div class="text-center">
+								¿Ya tienes una cuenta?<a href="InicioSesion.html" class="text-dark">inicio de sesión</a>
+							</div>
+						</div>
+					</div>
+					<div class="text-center mt-5 text-muted">
+						 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/login.js"></script>
+</body>
+</html>
